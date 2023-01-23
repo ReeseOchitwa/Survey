@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Population statistics</p>
+      <form id="survey-form">
+        <label id="name-label">Name:<input placeholder="Enter Name" id="name" name="text" required/></label>
+        <label id="email-label">Email Address:<input placeholder="Enter Valid Email Address" type="email" id="email" required/> </label>
+        <label id="number-label">Age:<input placeholder="Enter Age" id="number" type="number" min="12" max="120"></label>
+        <div></div>
+        <label>How are you?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Greatt</option>
+            <option value="2">Good</option>
+            <option value="3">Ok</option>
+            <option value="4">Bad</option>
+          </select>
+        </label>
+        <h2>Are you currently employed?</h2>
+        <label>
+       <input value="no" type="radio" name="love-type" class="inline" />no.</label>
+        <label><input type="radio" value="yes" name="love-type" class="inline" />yes.</label>
+            <div></div>
+        <label>
+          <input type="checkbox"class="inline" value="1" required /> Sign up for newsletter.
+			  </label>
+        <label>
+         <input type="checkbox" value="2" class="inline" required /> I consent to the use of my data.
+			  </label>
+        <label>Comments<textarea placeholder="I...."></textarea>
+        <label><input type="submit" id="submit"></label>
+      </form>
+  </body>
+</html>
